@@ -6,7 +6,7 @@ resource "aws_instance" "web" {
   tags = {
     Name = "Terraform_Demo"
   }
-  vpc_security_group_ids = [aws_security_group.allow_http.id]
+  vpc_security_group_ids = [aws_security_group.module_http.id]
   user_data              = <<-EOF
               #!/bin/bash
               yum update -y
