@@ -1,5 +1,5 @@
-resource "aws_security_group" "state_http" {
-  name        = "state_http"
+resource "aws_security_group" "allow_http" {
+  name        = "allow_http_module"
   description = "Allow http inbound traffic"
   vpc_id      = "vpc-0846ee62b715a3392"
 
