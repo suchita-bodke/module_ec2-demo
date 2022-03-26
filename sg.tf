@@ -1,5 +1,5 @@
-resource "aws_security_group" "module_http" {
-  name        = "module_http"
+resource "aws_security_group" "module_s_http" {
+  name        = "module_s_http"
   description = "Allow http inbound traffic"
   vpc_id      = "vpc-0846ee62b715a3392"
 
